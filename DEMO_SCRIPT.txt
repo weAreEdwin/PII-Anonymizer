@@ -1,0 +1,28 @@
+PII ANONYMIZER - 60 SECOND DEMO SCRIPT
+=======================================
+
+[0-10 sec] THE PROBLEM
+"You have a confidential document with client names, emails, and financial data.
+You want to use ChatGPT to analyze it, but you can't risk exposing sensitive information."
+
+[10-20 sec] THE SOLUTION
+"PII Anonymizer. Upload your document, and we automatically detect and replace 
+all personal information with safe placeholders."
+
+[20-35 sec] LIVE DEMO
+- Show document upload
+- Point to detected PII list (names, emails, SSNs)
+- Show anonymized output with placeholders like [PERSON_1], [EMAIL_1]
+"Every John Smith becomes PERSON_1. Every email becomes EMAIL_1. 
+The context stays intact, but the sensitive data is gone."
+
+[35-45 sec] USE IT
+"Copy this anonymized text to any AI platform. Get your analysis.
+When you're done, use the decrypt feature to restore original values."
+
+[45-55 sec] TECH STACK
+"Built with Python, FastAPI, spaCy NLP, React, and AES-256 encryption.
+All original data stays encrypted in your secure database."
+
+[55-60 sec] CLOSE
+"PII Anonymizer. Use AI safely. Keep your data private."
