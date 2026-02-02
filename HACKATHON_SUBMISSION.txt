@@ -1,0 +1,52 @@
+GLOBAL AI HACKATHON - PROJECT SUBMISSION
+=========================================
+
+PROJECT TITLE: PII Anonymizer - Safe Document Sharing for AI Platforms
+
+THE TEAM
+--------
+[Team Name]: [Your Team Name]
+[Challenge]: AI Inside Transformation
+[Members]:
+  - [Name 1] - [Role] - [Region/Practice]
+  - [Name 2] - [Role] - [Region/Practice]
+  - [Name 3] - [Role] - [Region/Practice]
+
+THE CHALLENGE
+-------------
+Organizations want to use AI platforms like ChatGPT, Claude, or Copilot to analyze 
+their documents, but these documents often contain sensitive information such as 
+names, emails, phone numbers, social security numbers, and financial data.
+
+Current options:
+1. Manually redact documents - slow and error-prone
+2. Avoid AI tools entirely - lose productivity benefits
+3. Risk exposing sensitive data - compliance violations
+
+We needed a solution that lets users safely leverage AI tools without exposing 
+confidential information.
+
+THE PROJECT
+-----------
+PII Anonymizer automatically detects and replaces sensitive information in documents 
+with consistent placeholders before sharing with AI platforms.
+
+How it works:
+1. User uploads a document (PDF, Word, or text file)
+2. System scans for PII using pattern matching and named entity recognition
+3. Each PII instance is replaced with a typed placeholder (e.g., [PERSON_1], [EMAIL_1])
+4. User copies anonymized text to any AI platform
+5. When done, user can decrypt to restore original values
+
+Key features:
+- Detects names, emails, phones, SSNs, credit cards, addresses, dates, organizations
+- Consistent placeholders maintain document context for AI analysis
+- Original values encrypted with AES-256
+- Export anonymized documents as PDF, Word, or plain text
+- Full audit logging for compliance
+
+Technologies:
+- Backend: Python, FastAPI, spaCy NLP, SQLAlchemy, PostgreSQL
+- Frontend: React, TypeScript, Tailwind CSS
+- Security: Fernet/AES-256 encryption, bcrypt password hashing, JWT authentication
+- Deployment: Docker, Docker Compose
